@@ -1,6 +1,6 @@
 .main {
   display: flex;
-  background: linear-gradient(to bottom, #000000, #333333, #f0f0f0);
+  background: #5555;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -9,7 +9,7 @@
 }
 
 .textBottom {
-  color: black;
+  color: #ffffff;
 }
 
 .description {
