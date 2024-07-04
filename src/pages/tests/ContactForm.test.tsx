@@ -1,4 +1,3 @@
-// __tests__/ContactForm.test.tsx
 import React from "react";
 import { render, fireEvent, waitFor } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
@@ -53,7 +52,7 @@ describe("ContactForm component", () => {
     const submitButton = getByText("Enviar");
     fireEvent.click(submitButton);
 
-    // Verifica que los mensajes de error no estén presentes después del envío válido
+    // Se verifica que los mensajes de error no estén presentes después del envío válido
     await waitFor(() => {
       const nameError = queryByText("Este campo es obligatorio");
       expect(nameError).toBeNull();
@@ -64,7 +63,5 @@ describe("ContactForm component", () => {
       const messageError = queryByText("Este campo es obligatorio");
       expect(messageError).toBeNull();
     });
-
-    // Aquí puedes agregar expect adicionales según el comportamiento esperado después del envío del formulario
   });
 });
