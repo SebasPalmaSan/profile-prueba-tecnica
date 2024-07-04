@@ -11,9 +11,9 @@ Tecnologías.
 
 Instalación.
 
-1. git clone <URL del repositorio>
+1. git clone https://github.com/SebasPalmaSan/profile-prueba-tecnica
 
-2. cd <nombre del directorio>
+2. cd nombre del directorio
 
 3. npm install
 
