@@ -7,7 +7,7 @@
   width: 100%;
   position: fixed;
   top: 0;
-  background-color: #333;
+  background-color: #f3f3f3;
   z-index: 1000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -18,51 +18,66 @@
   border-radius: 50%;
 }
 
+.userName {
+  color: black;
+  font-size: 16px;
+  margin-left: 10px; /* Ajusta el espacio entre la imagen y el nombre */
+}
+
 .navbar {
-  flex: 1;
-  text-align: right;
+  display: flex;
+  align-items: center;
 }
 
 .navList {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: flex;
 }
 
 .navItem {
-  display: inline-block;
-  margin-right: 32px;
+  margin-right: 20px;
 }
 
 .navLink {
-  color: white;
+  color: black;
   text-decoration: none;
   font-size: 16px;
 }
 
 .navLink:hover {
   text-decoration: underline;
-  color: #ddd;
+  color: #606060;
 }
 
-/* Media query para pantallas móviles */
 @media (max-width: 768px) {
   .header {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     padding: 16px 20px;
   }
 
-  .navbar {
-    text-align: left;
+  .profilePic {
+    margin-right: 10px; /* Ajusta el espacio entre la imagen y el nombre */
+  }
+
+  .navList {
+    flex-direction: row;
   }
 
   .navItem {
-    display: block;
-    margin-bottom: 10px;
+    margin-right: 10px; /* Ajusta el espacio entre los enlaces */
   }
 
   .navLink {
-    font-size: 14px;
+    font-size: 12px;
+  }
+
+  .userName {
+    display: none; /* Asegura que el nombre esté visible en móvil */
+    font-size: 16px;
+    margin-left: 10px; /* Ajusta el espacio entre la imagen y el nombre */
   }
 }

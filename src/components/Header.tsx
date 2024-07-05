@@ -17,6 +17,7 @@ const Header = () => {
           />
         </Link>
       </div>
+
       <nav className={styles.navbar}>
         <ul className={styles.navList}>
           <li className={styles.navItem}>
@@ -36,7 +37,7 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <h1>Lionel Andrés</h1>
+      <h3 className={styles.userName}>Lionel Andrés</h3>
     </header>
   );
 };

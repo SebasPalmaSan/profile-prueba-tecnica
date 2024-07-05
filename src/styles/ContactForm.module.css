@@ -1,6 +1,6 @@
 .contactForm {
   padding: 60px;
-  background: #ffffff;
+  background: #f3f3f3;
   border-radius: 10px;
   margin: 20px 0;
   margin-top: 4rem;
@@ -45,6 +45,8 @@
   margin-bottom: 10px;
   width: 100%;
   transition: all 0.3s ease;
+  background: #eaeaea;
+  color: #000000;
 }
 
 .textarea {
@@ -78,7 +80,7 @@
 @media (max-width: 768px) {
   .contactForm {
     padding: 20px;
-    margin-top: 12rem;
+    margin-top: 6rem;
   }
 
   .title {

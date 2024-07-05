@@ -1,4 +1,7 @@
 .interests {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 60px;
   background-color: #ffffff;
   border-radius: 10px;
@@ -12,31 +15,61 @@
 .title {
   margin-bottom: 20px;
   font-size: 36px;
+  text-align: left; /* Alineación del título a la izquierda */
 }
 
-.interests ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+.group {
+  flex: 1; /* Ocupa todo el espacio disponible */
+  text-align: left; /* Alineación del texto de los intereses a la izquierda */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Espacio entre los items */
 }
 
-.interests li {
-  margin: 10px 0;
-  font-size: 18px;
+.item {
+  border: solid 2px #000000;
+  margin: 2px;
+  padding: 6px;
+  width: 120px;
+  text-align: center;
+}
+
+.profilePic {
+  width: 400px; /* Tamaño de la imagen */
+  height: auto; /* Altura automática */
+  border-radius: 10px; /* Borde redondeado */
 }
 
 /* Media query para pantallas móviles */
 @media (max-width: 768px) {
   .interests {
+    flex-direction: column; /* Cambia a columna en dispositivos móviles */
     padding: 20px;
-    margin-top: 12rem;
+    margin-top: 6rem;
+  }
+
+  .group {
+    display: flex;
+    flex-direction: column; /* Cambia a columna en dispositivos móviles */
+    align-items: center;
+  }
+
+  .profilePic {
+    width: 100%; /* Ocupa todo el ancho en dispositivos móviles */
+    max-width: 300px; /* Tamaño máximo de la imagen en dispositivos móviles */
   }
 
   .title {
     font-size: 24px;
+    text-align: center; /* Centra el título en dispositivos móviles */
   }
 
-  .interests li {
-    font-size: 16px;
+  .item {
+    width: 100%; /* Los intereses ocupan todo el ancho disponible en móviles */
+    max-width: 300px; /* Tamaño máximo de cada interés en dispositivos móviles */
+  }
+
+  .profilePic {
+    margin-top: 10px;
   }
 }

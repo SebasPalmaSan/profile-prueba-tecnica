@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import styles from "../styles/ContactForm.module.css";
+import Buttons from "@/components/Buttons";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -102,9 +103,7 @@ const ContactForm = () => {
                 <span className={styles.error}>Este campo es obligatorio</span>
               )}
             </div>
-            <button type="submit" className={styles.button}>
-              Enviar
-            </button>
+            <Buttons type="submit">Enviar</Buttons>
           </form>
         )}
       </div>
