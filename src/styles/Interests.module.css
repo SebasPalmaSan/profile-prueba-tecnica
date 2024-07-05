@@ -1,75 +1,59 @@
 .interests {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   padding: 60px;
-  background-color: #ffffff;
+  background-color: #f3f3f3;
   border-radius: 10px;
   margin: 20px 0;
   margin-top: 4rem;
   color: #000000;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .title {
   margin-bottom: 20px;
   font-size: 36px;
-  text-align: left; /* Alineación del título a la izquierda */
+  text-align: center; /* Centra el título en todas las pantallas */
 }
 
 .group {
-  flex: 1; /* Ocupa todo el espacio disponible */
-  text-align: left; /* Alineación del texto de los intereses a la izquierda */
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px; /* Espacio entre los items */
+  flex-direction: column; /* Muestra las cajas de intereses en columnas */
+  align-items: center; /* Centra las cajas de intereses horizontalmente */
+  gap: 10px;
+  width: 100%;
 }
 
 .item {
   border: solid 2px #000000;
   margin: 2px;
   padding: 6px;
-  width: 120px;
+  width: 100%; /* Las cajas de intereses ocupan todo el ancho */
+  max-width: 300px; /* Tamaño máximo de cada caja */
   text-align: center;
 }
 
 .profilePic {
-  width: 400px; /* Tamaño de la imagen */
-  height: auto; /* Altura automática */
-  border-radius: 10px; /* Borde redondeado */
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px; /* Añade un margen superior para separar la imagen del contenido anterior */
 }
 
 /* Media query para pantallas móviles */
 @media (max-width: 768px) {
   .interests {
-    flex-direction: column; /* Cambia a columna en dispositivos móviles */
     padding: 20px;
     margin-top: 6rem;
   }
 
-  .group {
-    display: flex;
-    flex-direction: column; /* Cambia a columna en dispositivos móviles */
-    align-items: center;
-  }
-
   .profilePic {
-    width: 100%; /* Ocupa todo el ancho en dispositivos móviles */
-    max-width: 300px; /* Tamaño máximo de la imagen en dispositivos móviles */
+    width: 100%;
+    max-width: 300px;
   }
 
   .title {
     font-size: 24px;
-    text-align: center; /* Centra el título en dispositivos móviles */
-  }
-
-  .item {
-    width: 100%; /* Los intereses ocupan todo el ancho disponible en móviles */
-    max-width: 300px; /* Tamaño máximo de cada interés en dispositivos móviles */
-  }
-
-  .profilePic {
-    margin-top: 10px;
   }
 }

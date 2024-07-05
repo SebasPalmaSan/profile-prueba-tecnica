@@ -27,12 +27,12 @@
 }
 
 .textBottom {
-  font-size: 1.5rem; /* Ajusta el tamaño del texto según sea necesario */
+  font-size: 1.5rem;
 }
 
 .profilePicHome {
   width: 550px;
-  height: auto; /* Mantiene la proporción de la imagen */
+  height: auto;
 }
 
 @media (hover: hover) and (pointer: fine) {

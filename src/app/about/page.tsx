@@ -1,9 +1,7 @@
 import Image from "next/image";
 import styles from "../../styles/About.module.css";
-import Buttons from "@/components/Buttons";
 
 import imageMessi from "../../../public/images/messi-removebg-preview.png";
-import Link from "next/link";
 
 const About = () => {
   return (
@@ -37,9 +35,6 @@ const About = () => {
           mucho, y siempre he sentido la responsabilidad de devolver algo a la
           sociedad, especialmente a aquellos que más lo necesitan.
         </p>
-        <Link href="/">
-          <Buttons variant="primary">Volver</Buttons>
-        </Link>
       </div>
       <div className={styles.rightColumn}>
         <Image
