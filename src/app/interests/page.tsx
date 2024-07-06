@@ -18,8 +18,8 @@ const Interests = () => {
         <Image
           src={imageUser}
           alt="Profile Picture"
-          width={450}
-          height={450}
+          width={250}
+          height={250}
           className={styles.profilePic}
         />
       </div>
